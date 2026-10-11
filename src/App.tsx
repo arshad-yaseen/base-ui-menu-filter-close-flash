@@ -184,7 +184,6 @@ interface LogEntry {
   message: string;
 }
 
-// Logs callback timings relative to the moment the menu starts closing.
 function useEventLog() {
   const [entries, setEntries] = React.useState<LogEntry[]>([]);
   const closeStartRef = React.useRef(0);
